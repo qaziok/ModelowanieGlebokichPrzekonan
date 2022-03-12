@@ -1,5 +1,7 @@
 import tweepy
 from TwitterAnalisis import *
+from PyQt5 import QtCore, QtGui, QtWidgets
+from TwitterAnalisis.gui import Ui_MainWindow
 
 
 def connect():
@@ -49,7 +51,7 @@ if __name__ == '__main__':
         content = tweet.full_text
         content = content.replace('\n', ' ')
         content = content.encode('utf-8', 'ignore').decode()
-        print(repr(content))
+        print(content)
         try:
             choice = int('0' + input())
         except ValueError:
