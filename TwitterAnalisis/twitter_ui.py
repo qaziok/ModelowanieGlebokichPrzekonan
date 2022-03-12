@@ -1,17 +1,14 @@
-import tweepy
-import pandas as pd
-from TwitterAnalisis import *
-import twint
-import ui
 import PySimpleGUI as sg
+import tweepy
+
+from TwitterAnalisis import *
+
 
 def connect():
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
     return tweepy.API(auth)
 
-
-from pprint import pprint
 
 if __name__ == '__main__':
     api = connect()
@@ -46,7 +43,7 @@ if __name__ == '__main__':
         content: str
         content = tweet.full_text
         content = content.replace('/n', ' ')
-        content = content.encode('ascii','ignore').decode()
+        content = content.encode('ascii', 'ignore').decode()
 
         window['-tweet-'].update(content)
         event, values = window.read()
