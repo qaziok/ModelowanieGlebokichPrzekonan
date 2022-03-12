@@ -47,11 +47,13 @@ if __name__ == '__main__':
             tweets.pop(0)
         content: str
         content = tweet.full_text
-        print(repr(content))
         content = content.replace('\n', ' ')
         content = content.encode('utf-8', 'ignore').decode()
         print(repr(content))
-        choice = int('0' + input())
+        try:
+            choice = int('0' + input())
+        except ValueError:
+            choice = 0
         # 1 - pro
         # 2 - anty
         # 3 - skip
