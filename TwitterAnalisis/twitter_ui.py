@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import tweepy
+import pandas as pd
 
 from TwitterAnalisis import *
 
@@ -58,6 +59,10 @@ if __name__ == '__main__':
 
     window.close()
     print(save)
+    print(123)
+
+    tweets_df = pd.DataFrame.from_dict(save)
+    tweets_df.to_csv("./train.csv")
 
     with open('pro.txt', 'w') as pro:
         for x in save['pro']:
