@@ -41,11 +41,31 @@ def text_processing(tweet):
 
 
 if __name__ == "__main__":
-    tweets_df = pd.read_csv("../out/train.csv")
-    tweets_df = tweets_df.apply(text_processing)
+    train_tweets = pd.read_csv("../out/train.csv")
+    test_tweets = pd.read_csv("../out/test.csv")
+
+    train_tweets = train_tweets[["label", "tweet"]]
+    test_tweets = test_tweets[["tweet"]]
+
+    train_tweets["tweet_list"] = train_tweets["tweet"].apply(text_processing)
+    test_tweets["tweet_list"] = test_tweets["tweet"].apply(text_processing)
+
+    X = train_tweets["tweet"]
+    Y = train_tweets["label"]
+    test = test_tweets["tweet"]
+
+    msg_train, msg_test, label_train, label_test = train_test_split(train_tweets["tweet"],
+                                                                    train_tweets["label"],
+                                                                    test_size=0.2)
 
     pipeline = Pipeline([
         ('bow', CountVectorizer(analyzer=text_processing)),
         ('tfidf', TfidfTransformer()),
         ("classifier", MultinomialNB()),
     ])
+    pipeline.fit(msg_train, label_train)
+    predictions = pipeline.predict(msg_test)
+    print(classification_report(predictions, label_test))
+    print("\n")
+    print(confusion_matrix(predictions, label_test))
+    print(accuracy_score(predictions, label_test))
