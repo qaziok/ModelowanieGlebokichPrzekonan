@@ -105,7 +105,7 @@ class Ui_MainWindow(object):
         tweets_df = pd.DataFrame(self.all, columns=["label", "tweet"])
         tweets_df.index.name = "id"
         print(tweets_df)
-        tweets_df.to_csv("../out/train.csv")
+        tweets_df.to_csv("../resources/train.csv")
         with open('pro.txt', 'w', encoding='utf-8') as pro:
             for x in self.save['pro']:
                 print(x, file=pro)

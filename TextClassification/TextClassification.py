@@ -42,7 +42,7 @@ def text_processing(tweet):
 
 
 if __name__ == "__main__":
-    art = pd.read_csv('../out/data.csv', sep='\t')
+    art = pd.read_csv('../resources/data.csv', sep='\t')
 
     art = art[["label", "data"]]
 
