@@ -5,7 +5,7 @@ from sklearn.linear_model import SGDClassifier
 from preprocessing.article import word_preprocess
 
 if __name__ == "__main__":
-    df_train = pd.read_csv("../resources/data.csv", sep="\t")
+    df_train = pd.read_csv("../resources/data.csv", sep="\t", encoding="utf-8")
 
     words_per_article = df_train["data"].apply(word_preprocess)
 
