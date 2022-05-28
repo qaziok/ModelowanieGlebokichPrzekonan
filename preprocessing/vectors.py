@@ -13,13 +13,13 @@ def prepare_dictionary(data, words, r=3):
     return dictionary
 
 
-def generate_vectors(dictionary) -> pd.DataFrame:
+def generate_vectors(dictionary, words) -> pd.DataFrame:
     data = {}
     for i, (k, d) in enumerate(dictionary.items()):
-        for w, v in d.items():
-            if v > 1:
+        for w in words:
+            if d[w] > 1:
                 if w not in data.keys():
-                    data[w] = [0 for _ in dictionary.keys()]
-                data[w][i] = v
+                    data[w] = [0 for _ in words]
+                data[w][i] = d[w]
 
     return pd.DataFrame(data, index=dictionary.keys())
