@@ -1,11 +1,12 @@
 from nltk import RegexpTokenizer, WordNetLemmatizer
 from nltk.corpus import stopwords
+from random import sample
 import re
 
 
 def word_preprocess(sentence: str) -> list:
     """
-        Generuje listę kluczowych słów z podanego tekstu.
+        Generuje listę słów z podanego tekstu.
     """
     wordnet_lemmatizer = WordNetLemmatizer()
     sentence = str(sentence)
@@ -28,3 +29,8 @@ def pair_preprocess(sentence: str) -> list:
     """
     words = word_preprocess(sentence)
     return [f'{words[i]} {words[i + 1]}' for i in range(len(words) - 1)]
+
+def random_percent(data,percent):
+    if percent<=1:
+        return sample(data,k=int(len(data)*percent))
+    return None
