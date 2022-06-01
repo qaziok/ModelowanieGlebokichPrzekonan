@@ -2,7 +2,7 @@ import pickle
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import SGDClassifier
-from preprocessing.article import word_preprocess
+from article import word_preprocess
 
 if __name__ == "__main__":
     df_train = pd.read_csv("../resources/data.csv", sep="\t", encoding="utf-8")
