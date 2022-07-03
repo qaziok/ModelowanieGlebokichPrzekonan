@@ -1,6 +1,6 @@
 from nltk import RegexpTokenizer, WordNetLemmatizer
 from nltk.corpus import stopwords
-from random import sample
+from sklearn.model_selection import train_test_split
 import re
 
 
@@ -31,15 +31,15 @@ def pair_preprocess(sentence: str) -> list:
     return [f'{words[i]} {words[i + 1]}' for i in range(len(words) - 1)]
 
 
-from sklearn.model_selection import train_test_split
-
 def random_percent(data, percent):
     if percent <= 1:
-        return train_test_split(data, train_size = percent)
+        return train_test_split(data, train_size=percent)
     return None
 
+
 if __name__ == '__main__':
-    data = [[0,0,0,0,1],[0,1,0,0,0],[1,0,0,0,0],[1,1,0,0,0],[1,1,1,0,0],[1,1,1,1,0],[1,1,1,1,1],[0,0,0,0,0]]
-    print(*random_percent(data, 0.8),sep='\n')
+    data = [[0, 0, 0, 0, 1], [0, 1, 0, 0, 0], [1, 0, 0, 0, 0], [1, 1, 0, 0, 0], [1, 1, 1, 0, 0], [1, 1, 1, 1, 0],
+            [1, 1, 1, 1, 1], [0, 0, 0, 0, 0]]
+    print(*random_percent(data, 0.8), sep='\n')
     print(*random_percent(data, 0.8), sep='\n')
     print(*random_percent(data, 0.8), sep='\n')

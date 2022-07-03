@@ -7,7 +7,6 @@ from sklearn.metrics import classification_report
 
 from preprocessing.article import word_preprocess
 
-
 if __name__ == "__main__":
     df = pd.read_csv("../resources/merged.csv", sep="\t", encoding="utf-8")
 
@@ -27,6 +26,8 @@ if __name__ == "__main__":
     predicted = sgdc_classifier.predict(tfidf_vectorizer.transform(test["data"]))
 
     print(classification_report(test['label'], predicted))
+
+    sgdc_classifier.fit(tfidf_vectorizer.transform(test['data']), test['label'])
 
     # save model
     model = "merged_csv_ms"

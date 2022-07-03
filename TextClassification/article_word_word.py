@@ -87,7 +87,7 @@ def zwolennik(wiedza,to_czytania,opis="czlek"):
         plt.grid()
         plt.xlim([0, 10])
         plt.ylim([0, 10])
-        plt.plot()
+        plt.__plot(,
         plt.savefig(f"plots/{opis}/w{i}.png")
         plots.append(f"plots/{opis}/w{i}.png")
         plt.close(x)

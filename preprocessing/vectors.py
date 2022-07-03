@@ -1,4 +1,5 @@
 from collections import defaultdict
+from sklearn.feature_extraction.text import TfidfTransformer
 
 
 def find_close_words(data: list[list[str]], key_words: list[str], r=2):
@@ -32,3 +33,8 @@ def generate_vectors(dictionary: dict[defaultdict[int]], close_words: list[str])
             data[k][w_i] = d[w]
 
     return data
+
+
+def tfidf_vectors(data, key_words, close_words, r=2):
+    vectors = generate_vectors(prepare_dictionary(data,key_words,r=r),close_words)
+    return TfidfTransformer().fit_transform(list(vectors.values())).toarray()

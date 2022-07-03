@@ -16,8 +16,6 @@ if __name__ == "__main__":
 
     bow = tfidf_vectorizer.transform([o["text"] for o in others]).toarray()
 
-    # print([int(not o["isAntiVaccine"]) for o in others])
-    # print(sgdc_classifier.predict(bow))
     report = classification_report([int(not o["isAntiVaccine"]) for o in others], sgdc_classifier.predict(bow))
     print(report)
 

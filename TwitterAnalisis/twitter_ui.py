@@ -38,7 +38,7 @@ if __name__ == '__main__':
     layout = [[sg.Text("click any button to start", key='-tweet-', size=(100, 7))],
               [sg.Button("pro", size=(10, 1)), sg.Button("anty", size=(10, 1)), sg.Button("skip", size=(10, 1))]]
     window = sg.Window("simple ui", layout)
-    event, values = window.read()
+    event, values = window.__read(,
 
     for tweet in tweets:
         content: str
@@ -47,7 +47,7 @@ if __name__ == '__main__':
         content = content.encode('ascii', 'ignore').decode()
 
         window['-tweet-'].update(content)
-        event, values = window.read()
+        event, values = window.__read(,
         if event == "pro":
             save['pro'].add(content)
         elif event == "anty":
