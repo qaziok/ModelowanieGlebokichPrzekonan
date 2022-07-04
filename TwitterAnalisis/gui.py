@@ -10,6 +10,7 @@
 import tweepy
 from TwitterAnalisis import *
 from PyQt5 import QtCore, QtGui, QtWidgets
+import pandas as pd
 
 
 def connect():
@@ -32,24 +33,26 @@ class Ui_MainWindow(object):
         self.api = connect()
 
         self.query = 'covid vaccine'
-
         self.tweets = get_tweets(self.api, self.query, 20)
 
         self.save = {
             'pro': set(),
             'anty': set()
         }
+        self.all = []
 
         with open('pro.txt', 'r', encoding='utf-8') as pro:
             for line in pro:
                 if line == '\n':
                     continue
                 self.save['pro'].add(line.rstrip())
+                self.all.append((1, line.rstrip()))
         with open('anty.txt', 'r', encoding='utf-8') as anty:
             for line in anty:
                 if line == '\n':
                     continue
                 self.save['anty'].add(line.rstrip())
+                self.all.append((0, line.rstrip()))
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -99,6 +102,10 @@ class Ui_MainWindow(object):
         self.next()
 
     def closeEvent(self, event):
+        tweets_df = pd.DataFrame(self.all, columns=["label", "tweet"])
+        tweets_df.index.name = "id"
+        print(tweets_df)
+        tweets_df.to_csv("../resources/train.csv")
         with open('pro.txt', 'w', encoding='utf-8') as pro:
             for x in self.save['pro']:
                 print(x, file=pro)
@@ -125,10 +132,12 @@ class Ui_MainWindow(object):
 
     def pro(self):
         self.save['pro'].add(self.textBrowser.toPlainText())
+        self.all.append(self.textBrowser.toPlainText())
         self.next()
 
     def anty(self):
         self.save['anty'].add(self.textBrowser.toPlainText())
+        self.all.append(self.textBrowser.toPlainText())
         self.next()
 
     def skip(self):

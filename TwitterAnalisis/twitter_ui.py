@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import tweepy
+import pandas as pd
 
 from TwitterAnalisis import *
 
@@ -37,7 +38,7 @@ if __name__ == '__main__':
     layout = [[sg.Text("click any button to start", key='-tweet-', size=(100, 7))],
               [sg.Button("pro", size=(10, 1)), sg.Button("anty", size=(10, 1)), sg.Button("skip", size=(10, 1))]]
     window = sg.Window("simple ui", layout)
-    event, values = window.read()
+    event, values = window.__read(,
 
     for tweet in tweets:
         content: str
@@ -46,7 +47,7 @@ if __name__ == '__main__':
         content = content.encode('ascii', 'ignore').decode()
 
         window['-tweet-'].update(content)
-        event, values = window.read()
+        event, values = window.__read(,
         if event == "pro":
             save['pro'].add(content)
         elif event == "anty":
@@ -58,6 +59,10 @@ if __name__ == '__main__':
 
     window.close()
     print(save)
+    print(123)
+
+    tweets_df = pd.DataFrame.from_dict(save)
+    tweets_df.to_csv("./train.csv")
 
     with open('pro.txt', 'w') as pro:
         for x in save['pro']:
