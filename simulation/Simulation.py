@@ -10,6 +10,14 @@ import pandas as pd
 
 class Simulation:
     def __init__(self, title, knowledge, key_words, close_words):
+        """
+        Symulacja czytania artukułów przez osobę z określonymi z góry poglądami
+
+        :param title: Opis osoby
+        :param knowledge: Wiedza osoby
+        :param key_words: Słowa kluczowe
+        :param close_words: Słowa sąsiadujące ze słowami kluczowymi
+        """
         self.title = title
         self.knowledge = knowledge
         self.key_words = key_words
@@ -17,17 +25,24 @@ class Simulation:
         self.training_statistics = {}
         self.reading = ''
 
+        # generate vectors to train SOM
         vectors = tfidf_vectors(knowledge, key_words, close_words)
         self.som = MiniSom(size, size, len(vectors[0]), sigma=sigma, learning_rate=learning_rate,
                            activation_distance=activation_distance)
 
         print('training...')
-        #self.som.pca_weights_init(vectors)
         self.som.train(vectors, knowledge_iterations, verbose=True)
 
         self.__plot(self.som, vectors, title, 'knowledge')
 
     def run(self, to_read, what_to_read=None):
+        """
+        Uruchamia symulację
+
+        :param to_read: Artykuły do przeczytania
+        :param what_to_read: Opis artyków do przeczytania
+        :return: tablica z sumami i średniami dla pro i anty przy kolejnych wartościach learning rate
+        """
         self.reading = f'_{what_to_read}'
         vectors = tfidf_vectors(to_read, self.key_words, self.close_words)
         for lr in [0.01, 0.05, 0.1, 0.15, 0.25, 0.5, 1]:

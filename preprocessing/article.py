@@ -7,6 +7,8 @@ import re
 def word_preprocess(sentence: str) -> list:
     """
         Generuje listę słów z podanego tekstu.
+        :param sentence: tekst do przetworzenia
+        :return: lista słów
     """
     wordnet_lemmatizer = WordNetLemmatizer()
     sentence = str(sentence)
@@ -26,12 +28,21 @@ def word_preprocess(sentence: str) -> list:
 def pair_preprocess(sentence: str) -> list:
     """
         Generuje listę par słów sąsiadujących ze sobą z podanego tekstu.
+        :param sentence: tekst do przetworzenia
+        :return: lista par słów sąsiadujących ze sobą
     """
     words = word_preprocess(sentence)
     return [f'{words[i]} {words[i + 1]}' for i in range(len(words) - 1)]
 
 
 def random_percent(data, percent):
+    """"
+    Wybranie losowego procentu danych z podanej listy.
+
+    :param data: lista danych
+    :param percent: procent danych do wybrania
+    :return: lista wybranych danych
+    """
     if percent <= 1:
         return train_test_split(data, train_size=percent)
     return None

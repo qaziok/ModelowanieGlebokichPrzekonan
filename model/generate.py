@@ -8,6 +8,7 @@ from sklearn.metrics import classification_report
 from preprocessing.article import word_preprocess
 
 if __name__ == "__main__":
+    # load file with data to train model
     df = pd.read_csv("../resources/merged.csv", sep="\t", encoding="utf-8")
 
     train, test = train_test_split(df, test_size=0.2)
