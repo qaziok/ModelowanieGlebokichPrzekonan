@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  9 JUN 2022 08:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  7 JUL 2022 20:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1539,22 +1539,376 @@ Underfull \hbox (badness 10000) in paragraph at lines 953--954
 
  []
 
-[41 <./DeepBeliefModeling_files/DeepBeliefModeling_32_13.png>] [42] (DeepBeliefModeling.aux)
+[41 <./DeepBeliefModeling_files/DeepBeliefModeling_32_13.png>]
+Underfull \hbox (badness 1584) in paragraph at lines 985--988
+[]\T1/cmr/m/n/10.95 Do otrzy-ma-nia wynik�w wyko-rzys-tal-i�my funkcj� clas-si-fi-ca-tion_report z bib-lioteki sklearn.
+ []
+
+<../tasks/zad1_klasyfikacja_nowych_artykułów.png, id=292, 683.55376pt x 269.005pt>
+File: ../tasks/zad1_klasyfikacja_nowych_artykułów.png Graphic file (type png)
+<use ../tasks/zad1_klasyfikacja_nowych_artykułów.png>
+Package pdftex.def Info: ../tasks/zad1_klasyfikacja_nowych_artykułów.png  used on input line 1004.
+(pdftex.def)             Requested size: 683.5521pt x 269.00433pt.
+[42]
+<../tasks/zad2_rozszerzenie_danych_i_cross_validacja.png, id=300, 670.505pt x 274.02374pt>
+File: ../tasks/zad2_rozszerzenie_danych_i_cross_validacja.png Graphic file (type png)
+<use ../tasks/zad2_rozszerzenie_danych_i_cross_validacja.png>
+Package pdftex.def Info: ../tasks/zad2_rozszerzenie_danych_i_cross_validacja.png  used on input line 1018.
+(pdftex.def)             Requested size: 670.50337pt x 274.02307pt.
+<../simulations_storage/plots/Anti_person_knowledge.png, id=301, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Anti_person_knowledge.png Graphic file (type png)
+<use ../simulations_storage/plots/Anti_person_knowledge.png>
+Package pdftex.def Info: ../simulations_storage/plots/Anti_person_knowledge.png  used on input line 1034.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+ [43 <../tasks/zad1_klasyfikacja_nowych_artykułów.png> <../tasks/zad2_rozszerzenie_danych_i_cross_validacja.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1037
+
+ []
+
+<../simulations_storage/plots/Pro_person_knowledge.png, id=311, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Pro_person_knowledge.png Graphic file (type png)
+<use ../simulations_storage/plots/Pro_person_knowledge.png>
+Package pdftex.def Info: ../simulations_storage/plots/Pro_person_knowledge.png  used on input line 1041.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+[44 <../simulations_storage/plots/Anti_person_knowledge.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1044
+
+ []
+
+<../simulations_storage/plots/All_person_knowledge.png, id=318, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_knowledge.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_knowledge.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_knowledge.png  used on input line 1048.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+[45 <../simulations_storage/plots/Pro_person_knowledge.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1051
+
+ []
+
+[46 <../simulations_storage/plots/All_person_knowledge.png>]
+<../simulations_storage/plots/Anti_person_Pro_data_1.png, id=331, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Anti_person_Pro_data_1.png Graphic file (type png)
+<use ../simulations_storage/plots/Anti_person_Pro_data_1.png>
+Package pdftex.def Info: ../simulations_storage/plots/Anti_person_Pro_data_1.png  used on input line 1059.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1062
+
+ []
+
+[47 <../simulations_storage/plots/Anti_person_Pro_data_1.png>]
+<../simulations_storage/plots/Anti_person_Pro_data_0.5.png, id=338, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Anti_person_Pro_data_0.5.png Graphic file (type png)
+<use ../simulations_storage/plots/Anti_person_Pro_data_0.5.png>
+Package pdftex.def Info: ../simulations_storage/plots/Anti_person_Pro_data_0.5.png  used on input line 1067.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1070
+
+ []
+
+[48 <../simulations_storage/plots/Anti_person_Pro_data_0.5.png>]
+<../simulations_storage/plots/Anti_person_Pro_data_0.25.png, id=344, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Anti_person_Pro_data_0.25.png Graphic file (type png)
+<use ../simulations_storage/plots/Anti_person_Pro_data_0.25.png>
+Package pdftex.def Info: ../simulations_storage/plots/Anti_person_Pro_data_0.25.png  used on input line 1075.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1078
+
+ []
+
+[49 <../simulations_storage/plots/Anti_person_Pro_data_0.25.png>]
+<../simulations_storage/plots/Anti_person_Pro_data_0.15.png, id=351, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Anti_person_Pro_data_0.15.png Graphic file (type png)
+<use ../simulations_storage/plots/Anti_person_Pro_data_0.15.png>
+Package pdftex.def Info: ../simulations_storage/plots/Anti_person_Pro_data_0.15.png  used on input line 1083.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1085--1086
+
+ []
+
+[50 <../simulations_storage/plots/Anti_person_Pro_data_0.15.png>]
+<../simulations_storage/plots/Anti_person_Pro_data_0.1.png, id=357, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Anti_person_Pro_data_0.1.png Graphic file (type png)
+<use ../simulations_storage/plots/Anti_person_Pro_data_0.1.png>
+Package pdftex.def Info: ../simulations_storage/plots/Anti_person_Pro_data_0.1.png  used on input line 1091.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1093--1094
+
+ []
+
+[51 <../simulations_storage/plots/Anti_person_Pro_data_0.1.png>]
+<../simulations_storage/plots/Anti_person_Pro_data_0.05.png, id=363, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Anti_person_Pro_data_0.05.png Graphic file (type png)
+<use ../simulations_storage/plots/Anti_person_Pro_data_0.05.png>
+Package pdftex.def Info: ../simulations_storage/plots/Anti_person_Pro_data_0.05.png  used on input line 1099.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1102
+
+ []
+
+[52 <../simulations_storage/plots/Anti_person_Pro_data_0.05.png>]
+<../simulations_storage/plots/Anti_person_Pro_data_0.01.png, id=369, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Anti_person_Pro_data_0.01.png Graphic file (type png)
+<use ../simulations_storage/plots/Anti_person_Pro_data_0.01.png>
+Package pdftex.def Info: ../simulations_storage/plots/Anti_person_Pro_data_0.01.png  used on input line 1107.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1109--1110
+
+ []
+
+[53 <../simulations_storage/plots/Anti_person_Pro_data_0.01.png>] [54]
+<../simulations_storage/plots/Pro_person_Anti_data_1.png, id=379, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Pro_person_Anti_data_1.png Graphic file (type png)
+<use ../simulations_storage/plots/Pro_person_Anti_data_1.png>
+Package pdftex.def Info: ../simulations_storage/plots/Pro_person_Anti_data_1.png  used on input line 1121.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1123--1124
+
+ []
+
+[55 <../simulations_storage/plots/Pro_person_Anti_data_1.png>]
+<../simulations_storage/plots/Pro_person_Anti_data_0.5.png, id=387, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Pro_person_Anti_data_0.5.png Graphic file (type png)
+<use ../simulations_storage/plots/Pro_person_Anti_data_0.5.png>
+Package pdftex.def Info: ../simulations_storage/plots/Pro_person_Anti_data_0.5.png  used on input line 1129.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1132
+
+ []
+
+[56 <../simulations_storage/plots/Pro_person_Anti_data_0.5.png>]
+<../simulations_storage/plots/Pro_person_Anti_data_0.25.png, id=393, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Pro_person_Anti_data_0.25.png Graphic file (type png)
+<use ../simulations_storage/plots/Pro_person_Anti_data_0.25.png>
+Package pdftex.def Info: ../simulations_storage/plots/Pro_person_Anti_data_0.25.png  used on input line 1137.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1139--1140
+
+ []
+
+[57 <../simulations_storage/plots/Pro_person_Anti_data_0.25.png>]
+<../simulations_storage/plots/Pro_person_Anti_data_0.15.png, id=399, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Pro_person_Anti_data_0.15.png Graphic file (type png)
+<use ../simulations_storage/plots/Pro_person_Anti_data_0.15.png>
+Package pdftex.def Info: ../simulations_storage/plots/Pro_person_Anti_data_0.15.png  used on input line 1145.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1147--1148
+
+ []
+
+[58 <../simulations_storage/plots/Pro_person_Anti_data_0.15.png>]
+<../simulations_storage/plots/Pro_person_Anti_data_0.1.png, id=405, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Pro_person_Anti_data_0.1.png Graphic file (type png)
+<use ../simulations_storage/plots/Pro_person_Anti_data_0.1.png>
+Package pdftex.def Info: ../simulations_storage/plots/Pro_person_Anti_data_0.1.png  used on input line 1153.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1155--1156
+
+ []
+
+[59 <../simulations_storage/plots/Pro_person_Anti_data_0.1.png>]
+<../simulations_storage/plots/Pro_person_Anti_data_0.05.png, id=411, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Pro_person_Anti_data_0.05.png Graphic file (type png)
+<use ../simulations_storage/plots/Pro_person_Anti_data_0.05.png>
+Package pdftex.def Info: ../simulations_storage/plots/Pro_person_Anti_data_0.05.png  used on input line 1161.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1163--1164
+
+ []
+
+[60 <../simulations_storage/plots/Pro_person_Anti_data_0.05.png>]
+<../simulations_storage/plots/Pro_person_Anti_data_0.01.png, id=417, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/Pro_person_Anti_data_0.01.png Graphic file (type png)
+<use ../simulations_storage/plots/Pro_person_Anti_data_0.01.png>
+Package pdftex.def Info: ../simulations_storage/plots/Pro_person_Anti_data_0.01.png  used on input line 1169.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1171--1172
+
+ []
+
+[61 <../simulations_storage/plots/Pro_person_Anti_data_0.01.png>] [62]
+<../simulations_storage/plots/All_person_Pro_data_1.png, id=428, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Pro_data_1.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Pro_data_1.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Pro_data_1.png  used on input line 1183.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1185--1186
+
+ []
+
+[63 <../simulations_storage/plots/All_person_Pro_data_1.png>]
+<../simulations_storage/plots/All_person_Pro_data_0.5.png, id=435, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Pro_data_0.5.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Pro_data_0.5.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Pro_data_0.5.png  used on input line 1191.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1193--1194
+
+ []
+
+[64 <../simulations_storage/plots/All_person_Pro_data_0.5.png>]
+<../simulations_storage/plots/All_person_Pro_data_0.25.png, id=441, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Pro_data_0.25.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Pro_data_0.25.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Pro_data_0.25.png  used on input line 1199.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1201--1202
+
+ []
+
+[65 <../simulations_storage/plots/All_person_Pro_data_0.25.png>]
+<../simulations_storage/plots/All_person_Pro_data_0.15.png, id=447, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Pro_data_0.15.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Pro_data_0.15.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Pro_data_0.15.png  used on input line 1207.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1209--1210
+
+ []
+
+[66 <../simulations_storage/plots/All_person_Pro_data_0.15.png>]
+<../simulations_storage/plots/All_person_Pro_data_0.1.png, id=453, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Pro_data_0.1.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Pro_data_0.1.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Pro_data_0.1.png  used on input line 1215.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1217--1218
+
+ []
+
+[67 <../simulations_storage/plots/All_person_Pro_data_0.1.png>]
+<../simulations_storage/plots/All_person_Pro_data_0.05.png, id=460, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Pro_data_0.05.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Pro_data_0.05.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Pro_data_0.05.png  used on input line 1223.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1225--1226
+
+ []
+
+[68 <../simulations_storage/plots/All_person_Pro_data_0.05.png>]
+<../simulations_storage/plots/All_person_Pro_data_0.01.png, id=466, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Pro_data_0.01.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Pro_data_0.01.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Pro_data_0.01.png  used on input line 1231.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1233--1234
+
+ []
+
+[69 <../simulations_storage/plots/All_person_Pro_data_0.01.png>] [70]
+<../simulations_storage/plots/All_person_Anti_data_1.png, id=476, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Anti_data_1.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Anti_data_1.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Anti_data_1.png  used on input line 1245.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1247--1248
+
+ []
+
+[71 <../simulations_storage/plots/All_person_Anti_data_1.png>]
+<../simulations_storage/plots/All_person_Anti_data_0.5.png, id=483, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Anti_data_0.5.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Anti_data_0.5.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Anti_data_0.5.png  used on input line 1253.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1255--1256
+
+ []
+
+[72 <../simulations_storage/plots/All_person_Anti_data_0.5.png>]
+<../simulations_storage/plots/All_person_Anti_data_0.25.png, id=489, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Anti_data_0.25.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Anti_data_0.25.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Anti_data_0.25.png  used on input line 1261.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1264
+
+ []
+
+[73 <../simulations_storage/plots/All_person_Anti_data_0.25.png>]
+<../simulations_storage/plots/All_person_Anti_data_0.15.png, id=496, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Anti_data_0.15.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Anti_data_0.15.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Anti_data_0.15.png  used on input line 1269.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1271--1272
+
+ []
+
+[74 <../simulations_storage/plots/All_person_Anti_data_0.15.png>]
+<../simulations_storage/plots/All_person_Anti_data_0.1.png, id=502, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Anti_data_0.1.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Anti_data_0.1.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Anti_data_0.1.png  used on input line 1277.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1279--1280
+
+ []
+
+[75 <../simulations_storage/plots/All_person_Anti_data_0.1.png>]
+<../simulations_storage/plots/All_person_Anti_data_0.05.png, id=508, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Anti_data_0.05.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Anti_data_0.05.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Anti_data_0.05.png  used on input line 1285.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1287--1288
+
+ []
+
+[76 <../simulations_storage/plots/All_person_Anti_data_0.05.png>]
+<../simulations_storage/plots/All_person_Anti_data_0.01.png, id=514, 1445.4pt x 1445.4pt>
+File: ../simulations_storage/plots/All_person_Anti_data_0.01.png Graphic file (type png)
+<use ../simulations_storage/plots/All_person_Anti_data_0.01.png>
+Package pdftex.def Info: ../simulations_storage/plots/All_person_Anti_data_0.01.png  used on input line 1293.
+(pdftex.def)             Requested size: 1445.39648pt x 1445.39648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1295--1296
+
+ []
+
+[77 <../simulations_storage/plots/All_person_Anti_data_0.01.png>] [78] [79] (DeepBeliefModeling.aux)
 Package rerunfilecheck Info: File `DeepBeliefModeling.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26843 strings out of 478582
- 509595 string characters out of 2844344
- 819872 words of memory out of 3000000
- 44449 multiletter control sequences out of 15000+600000
+ 27126 strings out of 478582
+ 523168 string characters out of 2844344
+ 819874 words of memory out of 3000000
+ 44647 multiletter control sequences out of 15000+600000
  484148 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,8n,104p,639b,527s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\qazio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\qazio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\qazio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt1095.pk> <C:\Users\qazio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\qazio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\qazio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\qazio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\qazio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\qazio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/qazio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/qazio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/qazio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/qazio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/qazio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on DeepBeliefModeling.pdf (42 pages, 4200171 bytes).
+Output written on DeepBeliefModeling.pdf (79 pages, 8318534 bytes).
 PDF statistics:
- 645 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
- 198 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 898 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 363 words of extra memory for PDF output out of 10000 (max. 10000000)
 

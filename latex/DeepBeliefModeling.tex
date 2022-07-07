@@ -163,7 +163,7 @@
     \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
     % Document title
-    \title{Modelowanie Głębokich Przekonań
+    \title{Modelowanie głębokich przekonań\\
     przy użyciu sieci neuronowych}
     \author{Jakub Dajczak, Miłosz Chojnacki, Anton Delinac}
     
@@ -953,7 +953,7 @@ otwarta na nowe informacje.
     { \hspace*{\fill} \\}
     \newpage
 
-    \section*{Analiza i wnioski}
+    \subsection*{Analiza}
 
     Analizując powyższe wykresy, można zauważyć jak learning rate wpływa na zmianę opinii badanej osoby. Zbadane wartości współczynnika to 0.01, 0.05, 0.1, 0.15, 0.25, 0.5 oraz 1. 
 
@@ -964,6 +964,346 @@ Dla współczynnika 0.05 można zauważyć oddalanie się słów kluczowych i zb
 W przypadku współczynnika równego 0.1 lub 0.15 najlepiej widać wpływ uczenia na zmianę stanowiska badanego. Można zauważyć jak słowa kluczowe z klasy przeciwnej zbliżyły się do głównego miejsca ugrupowania. Taki efekt nastąpił jednak tylko w sytuacjach gdy osoba była początkowo po którejś ze stron. Dla osób niezdecydowanych można jedynie zauważyć efekt podobny do poprzedniego punktu.
 
 Przy współczynniku większym lub równym 0.25 tracimy możliwość jednoznacznego odczytania zmian na wykresach. Cechy grupują się, jednak rozprzestrzenione są po całej mapie. Wnioskując, współczynniki równe lub powyżej 0.25 stanowią za dużą podatność na zmianę stanowiska badanego.
+
+    \section*{Rozszerzenie danych}
+
+    W dalszej części projektu rozszerzyliśmy liczbę artykułów.
+    Wykorzystaliśmy artykuły zebrane przez grupę studentów 
+    (Bogna Lew, Bartosz Strzelecki, Krzysztof Nazar), również pracujących nad 
+    modelowaniem głębokich przekonań.
+
+    Przygotowali oni 146 artykułów, 72 popierające szczepienia oraz 74 niepopierające.
+    Teksty oraz ich źródła i przynależność do klasy zostały opisane w pliku w formacie json.
+
+
+    \subsection*{Klasyfikacja nowych artykułów}
+
+    W ramach testu używanego wcześniej klasyfikatora SVM, 
+    wykonaliśmy kroswalidację z użyciem nowych danych.
+    Dane z pliku json zostały odpowiednio przygotowane i podane do klasyfikatora.
+
+    Do otrzymania wyników wykorzystaliśmy funkcję classification\_report
+    z biblioteki sklearn. Generuje raport o wynikach klasyfikacji oparty na 
+    macierzy błędu.
+
+    Wynik opisany jest w tabeli, gdzie:
+    \begin{itemize}
+        \item support - liczba artykułów z klasy wybrane do testu;
+        \item accuracy - procentowy wynik klasyfikacji;
+        \item precision - procentowy wynik klasyfikacji względem 
+        artykułów z tej samej klasy;
+        \item recall - procentowy udział prawidłowo przewidzianych przypadków
+        pozytywnych wśród wszystkich przypadków pozytywnych;
+        \item f1-score - średnia harmoniczna pomiędzy czułością 
+        (ang. recall) oraz precyzją (ang. precision)
+    \end{itemize}
+
+
+
+    \begin{center}
+        \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../tasks/zad1_klasyfikacja_nowych_artykułów.png}
+    \end{center}
+    
+    Jak widać klasyfikacja nowych artykułów jest na poziomie 73\% co jest bardzo dobrym wynikiem.
+
+
+    \subsection*{Nauka klasyfikatora z nowymi artykułami}
+
+    Następnie połączyliśmy wszystkie artykuły do jednego pliku i podzieliliśmy 
+    je w stosunku 1:5 na dane testowe i treningowe.
+    Dla nowych danych treningowych wytrenowaliśmy klasyfikator SVM, a następnie
+    wykonaliśmy kroswalidację na danych treningowych, żeby sprawdzić jego skuteczność.
+    
+    \begin{center}
+        \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../tasks/zad2_rozszerzenie_danych_i_cross_validacja.png}
+    \end{center}
+
+    Wyniki na poziomie 90\% są bardzo dobre i są na poziomie poprzedniego klasyfikatora.
+
+    \subsection*{Symulacja poglądów}
+
+    Jak dla poprzednich danych, przeprowadziliśmy symulację zmiany poglądów pod wpływem,
+    czytania nowych artykułów z drugiej strony.
+    Tak samo jak w poprzednim przypadku z pomocą mapy Kohonena,
+    zasymulowaliśmy wstępne poglądy i wygenerowaliśmy wykresy.
+
+
+    \subsubsection*{Osoba wierząca w teorię antyszczepionkową}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Anti_person_knowledge.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \subsubsection*{Osoba przekonana co do skuteczności szczepionek}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Pro_person_knowledge.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \subsubsection*{Osoba niezdecydowana}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_knowledge.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+
+    \newpage
+\subsubsection*{Osoba antyszczepionkowa czyta artykuły zachęcające do szczepień}
+
+    Learning rate = 1.0
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Anti_person_Pro_data_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.5
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Anti_person_Pro_data_0.5.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.25
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Anti_person_Pro_data_0.25.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.15
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Anti_person_Pro_data_0.15.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.1
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Anti_person_Pro_data_0.1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.05
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Anti_person_Pro_data_0.05.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.01
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Anti_person_Pro_data_0.01.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+\newpage
+
+Tabela
+
+\newpage
+\subsubsection*{Osoba przekonana co do skuteczności szczepionek czyta artykuły przeciwko szczepieniom}
+
+    Learning rate = 1.0
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Pro_person_Anti_data_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.5
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Pro_person_Anti_data_0.5.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.25
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Pro_person_Anti_data_0.25.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.15
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Pro_person_Anti_data_0.15.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.1
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Pro_person_Anti_data_0.1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.05
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Pro_person_Anti_data_0.05.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.01
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/Pro_person_Anti_data_0.01.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+\newpage
+
+Tabela
+
+\newpage
+\subsubsection*{Osoba niezdecydowana czyta artykuły zachęcające do szczepień}
+
+    Learning rate = 1.0
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Pro_data_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.5
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Pro_data_0.5.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.25
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Pro_data_0.25.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.15
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Pro_data_0.15.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.1
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Pro_data_0.1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.05
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Pro_data_0.05.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.01
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Pro_data_0.01.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+\newpage
+
+Tabela
+
+\newpage
+\subsubsection*{Osoba niezdecydowana zaczyna czytać artykuły przeciwko szczepieniom}
+
+    Learning rate = 1.0
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Anti_data_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.5
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Anti_data_0.5.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.25
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Anti_data_0.25.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.15
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Anti_data_0.15.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.1
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Anti_data_0.1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.05
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Anti_data_0.05.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+
+    \newpage
+    Learning rate = 0.01
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{../simulations_storage/plots/All_person_Anti_data_0.01.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    \newpage
+    
+    Tabela
+
+    \newpage
+
+    \subsection*{Analiza}
+
+    \#TODO
+
+    \section*{Wnioski}
 
 Podsumowując powyższą analizę, współczynnik uczenia, tzw. learning rate, w samoorganizującej się sieci neuronowej odwzorowuje skłonność człowieka do zmiany swojej opinii przez dostęp do przekonywującej informacji. Dla najmniejszych badanych wartości osoba trzymała się swojego przekonania nie zważając na treść czytanych artykułów. Natomiast dla większych, osobę można uznać za podatną na zmiany pod wpływem otrzymywanych informacji, gdzie wartością graniczną współczynnika uczenia okazała się wartość 0.15.
 
