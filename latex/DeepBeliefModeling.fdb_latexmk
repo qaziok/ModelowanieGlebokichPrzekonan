@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1657220114 "d:/si/projekt/ModelowanieGlebokichPrzekonan/latex/DeepBeliefModeling.tex" "DeepBeliefModeling.pdf" "DeepBeliefModeling" 1657220132
+["pdflatex"] 1657303438 "d:/si/projekt/ModelowanieGlebokichPrzekonan/latex/DeepBeliefModeling.tex" "DeepBeliefModeling.pdf" "DeepBeliefModeling" 1657303458
   "../simulations_storage/plots/All_person_Anti_data_0.01.png" 1656938411 163848 0e4f1ebc8f961bb8104dbdfc4baada4c ""
   "../simulations_storage/plots/All_person_Anti_data_0.05.png" 1656938411 164614 4bf93da6c56216824eed472e49a9c340 ""
   "../simulations_storage/plots/All_person_Anti_data_0.1.png" 1656938411 161894 264c33dca181038ecb57294ed65ab009 ""
@@ -31,6 +31,10 @@
   "../simulations_storage/plots/Pro_person_Anti_data_0.5.png" 1656938411 163352 52f8f31b9105134d8a52bc73c22d4884 ""
   "../simulations_storage/plots/Pro_person_Anti_data_1.png" 1656938411 163023 3485753b2a9733fe1899a954aa31d4de ""
   "../simulations_storage/plots/Pro_person_knowledge.png" 1656938411 165602 95bc5b3a309efb1921a6667fb24f4c42 ""
+  "../simulations_storage/tables/All_person_Anti_data_plot.png" 1657302109 38072 759e007cce0a6928730c2c0b390dae7b ""
+  "../simulations_storage/tables/All_person_Pro_data_plot.png" 1657302288 36588 d39da1db5c4c84062ca1f791bb738c8e ""
+  "../simulations_storage/tables/Anti_person_Pro_data_plot.png" 1657302916 35435 7cbe1e110058a222e7f22dc8495379e8 ""
+  "../simulations_storage/tables/Pro_person_Anti_data_plot.png" 1657303055 34930 f66d90960bf3034e066bd29b14f8b224 ""
   "../tasks/zad2_rozszerzenie_danych_i_cross_validacja.png" 1656938411 21043 94b0a829d26e4b0d4907cffadfae99c3 ""
   "C:/Users/qazio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1654548327 111315 969aa9ba260ad51d83694f9a758c66a6 ""
   "C:/Users/qazio/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1648387260 28976 d01dffd4ca05ab6255a3bfe173291c2b ""
@@ -241,9 +245,9 @@
   "C:/Users/qazio/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/qazio/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636288472 56029 3f7889dab51d620aa43177c391b7b190 ""
   "C:/Users/qazio/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1623005690 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "DeepBeliefModeling.aux" 1657220131 724 b8e32e5a8a451fd1845b5ea6c2286d7d "pdflatex"
-  "DeepBeliefModeling.out" 1657220116 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "DeepBeliefModeling.tex" 1657220106 54769 d271a864ffccf83a910825b6d332cffc ""
+  "DeepBeliefModeling.aux" 1657303458 1496 dd75869d123fe030edacf0301fde3941 "pdflatex"
+  "DeepBeliefModeling.out" 1657303440 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "DeepBeliefModeling.tex" 1657303422 60069 ef2578fbaea60ac976cefa2135d0aa2c ""
   "DeepBeliefModeling_files/DeepBeliefModeling_13_0.png" 1656938410 39792 c708115172f24c8a0207a28ff6afde4f ""
   "DeepBeliefModeling_files/DeepBeliefModeling_14_0.png" 1656938410 19996 20fb070a34eda17816a4b7b47da16be7 ""
   "DeepBeliefModeling_files/DeepBeliefModeling_15_1.png" 1656938410 81415 e3e62d040a34b18984509929788d9a9b ""
@@ -281,7 +285,7 @@
   "DeepBeliefModeling_files/DeepBeliefModeling_32_7.png" 1656938410 157946 46c2592f3b25da6d1fbf684817cecde3 ""
   "DeepBeliefModeling_files/DeepBeliefModeling_32_9.png" 1656938410 158641 ee03169ce6ecde5c3cd617a459a9f2a2 ""
   "DeepBeliefModeling_files/DeepBeliefModeling_6_1.png" 1656938410 7214 63381935e189c00b48bca0b62829c626 ""
-  "d:/si/projekt/ModelowanieGlebokichPrzekonan/latex/DeepBeliefModeling.tex" 1657220106 54769 d271a864ffccf83a910825b6d332cffc ""
+  "d:/si/projekt/ModelowanieGlebokichPrzekonan/latex/DeepBeliefModeling.tex" 1657303422 60069 ef2578fbaea60ac976cefa2135d0aa2c ""
   (generated)
   "DeepBeliefModeling.aux"
   "DeepBeliefModeling.log"
