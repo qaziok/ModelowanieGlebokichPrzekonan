@@ -1381,11 +1381,27 @@ Przy współczynniku większym lub równym 0.25 tracimy możliwość jednoznaczn
 
     \subsection*{Analiza}
 
-    \#TODO
+    Analizując uzyskane wykresy możemy zauważyć wpływ rozszerzenia bazy danych o nowe artykuły na wyniki “karmienia” wytrenowanej sieci Kohonena. Trzeba zaznaczyć, że inaczej wyglądają przede wszystkim początkowe stany wiedzy badanych osób (popierającej, nie popierającej oraz obojętnej na szczepienia). Dołączone artykuły spowodowały, że odległości między słowami kluczowymi są mniejsze niż poprzednio. Zapewne jest to spowodowane krótszą długością nowych artykułów, w związku z czym słowa kluczowe mają większy wpływ na słowa sąsiadujące. Tak jak w poprzednim przypadku, zbadaliśmy wartości współczynnika 0.01, 0.05, 0.1, 0.15, 0.25, 0.5 oraz 1.
+
+W przypadku learning rate’u równego 0.01 bardzo dobrze widać wpływ czytania artykułów na wiedzę badanej osoby. Odległości między słowami kluczowymi reprezentującymi klasę przyjętej idei przez osobę, zwiększają się, a odległości między słowami z przeciwnej klasy zmniejszają się. Takie zjawisko możemy interpretować jako poznawanie drugiej strony polaryzacji oraz bardziej świadome rozróżnianie cech kluczowych dla każdej z klas.
+
+Współczynnik uczenia równy 0.05 daje nam wzmocniony efekt z poprzedniej wartości, czyli więcej słów z przeciwnych stron zbliżyły się do siebie lecz w stosunku do ogółu prawie nie zmieniły położenia. Widoczne są małe grupy np. trzech lub czterech mocno skorelowanych słów.
+
+Tak jak dla poprzedniego zestawu danych, w przypadku współczynnika 0.1 i 0.15 najlepiej widać efekt uczenia badanej osoby na mapie Kohonena. W przeciwieństwie do mniejszych wartości współczynnika, tutaj możemy zauważyć rozprzestrzenianie się po mapie małych grup mocno skorelowanych słów, dzięki czemu mamy wrażenie, że słowa z tych samych klas zbliżają się do siebie i grupują. Tymczasem na podstawie utworzonej przez nas tabelki z średnimi odległościami między słowami z danych klas możemy stwierdzić, że to tylko złudzenie, gdyż tak naprawdę odległości się zwiększyły. Warto jednak zaznaczyć, że mniejsza różnica w odległości jest między słowami klasy, której artykuły czyta badana osoba.
+
+Kontynuując analizę otrzymanych map Kohonena dla współczynników większych lub równych 0.25 na pierwszy rzut oka dochodzimy do takiego samego wniosku co dla pierwszego zestawu artykułów - współczynniki te powodują za dużą zmianę wartości neuronów w każdej iteracji przez co na mapie panuje chaos i ciężko rozpoznać stanowisko badanej osoby. Po skomponowaniu wykresu średniej odległości od wartości współczynnika uczenia możemy jednak zauważyć coś ciekawszego. 
+
+W przypadku osoby antyszczepionkowej czytającej artykuły proszczepionkowe, powyżej współczynnika uczenia 0.25, odległości średnie słów czytanej klasy przyjmują trend malejący, a przyjmowanej idei trend rosnący. Na tej podstawie możemy wywnioskować, że wraz z wzrostem learning rate’u osoba antyszczepionkowa jest bardziej podatna na nowe informacje.
+
+W sytuacji natomiast gdy osoba proszczepionkowa czyta artykuły antyszczepionkowe widzimy, że odległości średnie między słowami czytanej klasy zwiększają się, a między słowami reprezentującymi przyjmowane przez osobę stanowisko zmniejszają się (od współczynnika 0.5 i wyżej). 
+
+Możemy zatem wywnioskować, że wytrenowana przez nas sieć neuronowa przedstawiająca wiedzę osoby nie popierającej szczepienia jest bardziej podatna na zmiany pod wpływem danych z innej klasy niż sieć przedstawiająca wiedzę osoby popierającej szczepienia.
+
+W przypadku osób niezdecydowanych, badane wartości współczynnika możemy podzielić na dwie grupy. Pierwsza do 0.25 wyłącznie, gdzie trend odległości między słowami kluczowymi jest bardzo podobny dla obu klas. Druga od 0.25 włącznie, gdzie odległości zmniejszają się między słowami reprezentującymi klasę czytanych artykułów. Możemy to interpretować jakoby osoba bardziej przychylała się ku idei przedstawionej w czytanych artykułach, dopiero gdy współczynnik uczenia jest równy co najmniej około 0.25.
+
 
     \section*{Wnioski}
 
-Podsumowując powyższą analizę, współczynnik uczenia, tzw. learning rate, w samoorganizującej się sieci neuronowej odwzorowuje skłonność człowieka do zmiany swojej opinii przez dostęp do przekonywującej informacji. Dla najmniejszych badanych wartości osoba trzymała się swojego przekonania nie zważając na treść czytanych artykułów. Natomiast dla większych, osobę można uznać za podatną na zmiany pod wpływem otrzymywanych informacji, gdzie wartością graniczną współczynnika uczenia okazała się wartość 0.15.
-
+    Podsumowując powyższą analizę, współczynnik uczenia, tzw. Learning rate, w samoorganizującej się sieci neuronowej odwzorowuje skłonność człowieka do zmiany swojej opinii przez dostęp do przekonywującej informacji. Oprócz tego współczynnika, znaczenie ma rozkład wag w neuronach w wytrenowanej sieci, stąd różnica w zachowaniach sieci przedstawiających osoby popierającej szczepienia oraz nie popierającej ich. Ponadto na wynik ma też wpływ długość zebranych artykułów. Dla większych długości wyniki trenowania i “karmienia” artykułami wydają się lepiej oddawać rzeczywiste zachowanie ludzi w zależności od podatności na nowe informacje.
 
 \end{document}
